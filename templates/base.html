@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+
+
+    <title> 
+        {% block title %}
+
+        {% endblock %}
+    </title>
+    
+    <style>
+        input[type="text"] + label {
+    pointer-events: none;
+
+    *{
+        pointer-events: all;
+    }
+}
+
+input[type="tel"] + label {
+    pointer-events: none;
+
+    * {
+        pointer-events: all;
+    }
+}
+
+input[type="email"] + label {
+    pointer-events: none;
+
+    * {
+        pointer-events: all;
+    }
+}
+
+
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <center><h4>Notify Me &nbsp;<a class="btn-floating pulse"><i class="material-icons">notifications_none
+    </i></a></h4></center>
+    
+
+    <br>
+    {% block content %} 
+    
+    
+    {% endblock %}  
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

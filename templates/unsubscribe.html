@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title%} Register {% endblock %}
+
+{%block content%}
+
+
+<br>
+<br>
+
+
+<div class="container">
+    <h4 style="color: #f37676; text-align: center;">{{message}}</h4>
+<form action="#" method="POST"  class="col s12">
+
+  
+      <div class="row">
+
+            <div class="input-field col s6">
+                <i class="material-icons prefix">mail</i>
+                <input name="email"  id="email" type="email" class="validate" required>
+                <label for="email">Email</label>
+            </div>
+
+
+            <a class="waves-effect waves-light btn"><input type="submit" value="Unsubsribe"/></a>
+    </div>
+
+
+    
+
+
+
+
+
+
+</form>
+
+</div>
+
+
+{%endblock%}
